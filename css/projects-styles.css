@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.75);
+    font-family: monospace, sans-serif, serif;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+.main-content {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 100px auto auto auto auto 100px;
+}
+
+.main-content .back-to-index-btn {
+    grid-row: 1/1;
+    grid-column: 1/1;
+    padding: 20px;
+}
+
+.main-content .page-title {
+    width: 100%;
+    grid-row: 1/1;
+    grid-column: 2/2;
+    text-align: center;
+    margin-top: auto;
+    font-size: 2.5rem;
+}
+
+.main-content .project {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 35% 65%;
+}
+
+.main-content .project h1 {
+    padding: 20px;
+    grid-row: 1/1;
+    grid-column: 1/1;
+    font-size: 2.25rem;
+}
+
+.main-content .project .summary {
+    grid-row: 1/1;
+    grid-column: 2/2;
+    font-size: 1.25rem;
+    padding: 20px;
+}
+
+.main-content .project .project-technologies {
+    width: 100%;
+    grid-row: 2/2;
+    grid-column: 2/2;
+    list-style-type: none;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+}
+
+.main-content .project .project-technologies li {
+    width: 100%;
+    text-align: justify;
+    font-size: 1.25rem;
+}
+
+.main-content .project h1 a {
+    color: rgba(0, 0, 0, 0.75);
+    transform-style: preserve-3d;
+    display: block;
+}
+
+.main-content .featured-project {
+    grid-row: 2/2;
+    grid-column: 2/2;
+}
+
+.main-content .featured-project h1 a:hover, .main-content .second-project h1 a:hover,
+.main-content .third-project h1 a:hover, .main-content .fourth-project h1 a:hover,
+.main-content .back-to-index-btn:hover  {
+    animation: smash 0.5s linear forwards;
+}
+
+.main-content .second-project {
+    grid-row: 3/3;
+    grid-column: 2/2;
+}
+
+.main-content .third-project {
+    grid-row: 4/4;
+    grid-column: 2/2;
+}
+
+.main-content .fourth-project {
+    grid-row: 5/5;
+    grid-column: 2/2;
+}
+
+@keyframes smash {
+    0% {
+        transform: rotateY(0deg);
+        color: rgba(0, 0, 0, 1);
+    }
+    50% {
+        transform: rotateY(30deg);
+        color: rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        transform: rotateY(0deg);
+        color: rgba(0, 0, 0, 1);
+    }
+}
