@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: monospace, sans-serif, serif;
+    color: rgba(0, 0, 0, 0.75);
 }
 
 body {
     width: 100%;
     height: auto;
     background-color: rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.75);
-    font-family: monospace, sans-serif, serif;
 }
 
 main {
