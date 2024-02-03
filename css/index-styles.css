@@ -24,11 +24,11 @@ main {
     height: 100vh;
     display: grid;
     grid-template-rows: 20% auto auto 20%;
-    grid-template-columns: 20% auto 20%;
+    grid-template-columns: auto;
+    place-items: center;
 }
 
 .main-content h1 {
-    grid-column: 2/3;
     grid-row: 2/2;
     font-size: 3.5rem;
     color: rgba(0, 0, 0, 0.75);
@@ -36,7 +36,6 @@ main {
 
 .main-content .socials {
     grid-row: 3/3;
-    grid-column: 2/2;
 }
 
 .main-content svg {
@@ -100,7 +99,7 @@ main {
         color: rgba(0, 0, 0, 1);
     }
 }
-
+/*
 .projects {
     width: 80%;
     height: auto;
@@ -108,4 +107,44 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}*/
+
+@media (max-width: 1024px) {
+    .main-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .footer-nav .nav-link {
+        font-size: 2.25rem;
+        padding: 20px;
+        color: rgba(0, 0, 0, 0.75);
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main-content h1 {
+        font-size: 2rem;
+    }
+
+    .main-content svg {
+        width: 40px;
+    }
+
+    .footer-nav .nav-link {
+        font-size: 1.75rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    main .main-content h1 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .footer-nav .nav-link {
+        font-size: 1.25rem;
+        padding: 5px;
+    }
 }
