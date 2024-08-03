@@ -63,6 +63,10 @@ main {
 .container {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url("../assets/main-bg-asset-extention.jpg");
     background-position: top;
     background-size: cover;
@@ -72,10 +76,6 @@ main {
 .container-1 {
     position: relative;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-image: url("../assets/main-bg-asset.jpg");
     background-position: center center;
     background-size: cover;
@@ -132,14 +132,12 @@ main {
 
 .container-2 {
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
 }
 
 .container-2 h1 {
     font-size: 2.22rem;
+    padding: 0 0 20px 0;
 }
 
 .container-2 .course-list {
@@ -205,3 +203,20 @@ main {
     width: 25%;
     padding: 0 20px;
 }
+
+.container-3 {
+    padding: 20px;
+}
+
+.container-3 h1 {
+    font-size: 2.22rem;
+    padding: 0 0 20px 0;
+}
+
+.container-3 p {
+    width: 90%;
+    padding: 20px;
+    line-height: 2rem;
+    background-color: rgba(var(--secondary-rgb), 0.5);
+}
+
