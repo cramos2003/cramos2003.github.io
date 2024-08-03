@@ -178,6 +178,7 @@ main {
 .course .course-description-show {
     visibility: visible;
     height: auto;
+    padding: 20px;
 }
 
 .course-description h2 {
@@ -192,4 +193,15 @@ main {
 .course-description ul li {
     font-size: 1.11rem;
     line-height: 2rem;
+}
+
+.course-description .skills-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.course-description .skills-list li {
+    width: 25%;
+    padding: 0 20px;
 }
