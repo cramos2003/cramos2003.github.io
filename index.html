@@ -1,232 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="https://builder.bootstrapmade.com/static/vendors/bootstrap-icons/bootstrap-icons.css?v=21">
-    <title>Christian Ramos | Developer Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Ramos | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
-    <header id="profile-card">
-        <div id="profile-picture-container">
-            <img src="src/assets/profile-picture.jpg" alt="Christian Ramos profile picture">
-        </div>
 
-        <h2>Christian Ramos</h2>
+  <header>
+    <img src="/src/assets/profile-pic.jpg" width="200" alt="">
+    <h1>Christian Ramos</h1>
+    <p>Computer Science Student at California State University, East Bay</p>
+    <p>Aspiring Software & Cybersecurity Professional</p>
+  </header>
 
-        <div id="social-media">
-            <a class="social-media-link" href="#">
-                <img src="src/assets/linkedin.png" alt="" class="icon">
-            </a>
-            <a class="social-media-link" href="#">
-                <img src="src/assets/github.png" alt="" class="icon">
-            </a>
-            <a class="social-media-link" href="#">
-                <img src="src/assets/instagram.png" alt="" class="icon">
-            </a>
-        </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>PayPal-Integrated Vehicle Registration Form</h3>
+        <p>A custom form hosted on Google Sites that uses Google Apps Script to store data in Google Sheets. Integrated with the PayPal SDK to process payments before submission.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>College Enrollment System</h3>
+        <p>A client-server Java application that allows students to register for courses and admins to manage students, courses, and enrollments. Developed as a software engineering class project.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
 
-        <nav id="navigation">
-            <a class="navigation-link" id="active-section" href="#">Home</a>
-            <a class="navigation-link" href="#">About</a>
-            <a class="navigation-link" href="#">Skills</a>
-            <a class="navigation-link" href="#">Projects</a>
-            <a class="navigation-link" href="#">Contact</a>
-        </nav>
-    </header>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a></p>
+    </div>
+  </section>
 
-    <main>
-        <div id="developer-intro-container">
-            <h1 id="developer-name">Christian Ramos</h1>
-            <p id="developer-type">I'm a <span>Freelance Developer</span></p>
-        </div>
+  <footer>
+    <p>© 2025 Christian Ramos. All rights reserved.</p>
+  </footer>
 
-        <div id="about-container">
-            <div class="section-title-container">
-                <h1 class="section-title">About</h1>
-            </div>
-
-            <div class="page-break-container"></div>
-
-            <div id="details-container">
-                <div id="profile-img-container">
-                    <img src="src/assets/profile-picture.jpg" alt="">
-                </div>
-
-                <div id="details">
-                    <h2>Freelance Developer & Student</h2>
-
-                    <p>
-                        My name is Christian! I am a freelance developer and college student
-                        attending CSU East Bay studying Computer Science. I specialize in
-                        automation for local businesses and non profit organizations. I am
-                        thrilled to bring innovation to those that desire it and want to keep
-                        up with the latest technology to have a competitive advantage.
-                    </p>
-
-                    <ul id="developer-details">
-                        <li class="detail">
-                            <span>Birthday: </span> 2 May 2003
-                        </li>
-                        <li class="detail">
-                            <span>Website: </span>
-                        </li>
-                        <li class="detail">
-                            <span>Phone: </span> +1 (510) 456-5036
-                        </li>
-                        <li class="detail">
-                            <span>Location: </span> Bay Area, California, USA
-                        </li>
-                        <li class="detail">
-                            <span>Age: </span> 22
-                        </li>
-                        <li class="detail">
-                            <span>Degree: </span> B.S. Computer Science
-                        </li>
-                        <li class="detail">
-                            <span>Email: </span> Christian.ramos7459@gmail.com
-                        </li>
-                        <li class="detail">
-                            <span>Freelance: </span> Available
-                        </li>
-                    </ul>
-
-                    <p class="detail-description">
-                        As a Bay Area native I grew up near innovation and fell in love with
-                        the culture and evnironment around me every day. This love helped me
-                        grow to desire innovation as well as help local businesses around me.
-                        Through this I have fufulled many different wants I have had in work:
-                        my love of technology, my desire to help people, and an itch to innovate.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div id="stats-container">
-            <div class="page-break-container"></div>
-
-            <ul id="stat-list">
-                <li>
-                    <h2>5 Stars</h2>
-                    <p><span>Satisfaction</span> from clients</p>
-                </li>
-                <li>
-                    <h2>10+</h2>
-                    <p><span>Projects</span> for clients</p>
-                </li>
-                <li>
-                    <h2>100+</h2>
-                    <p><span>Hours of support</span> per client projects</p>
-                </li>
-            </ul>
-        </div>
-
-        <div id="skills-container">
-            <div class="section-title-container">
-                <h1 class="section-title">Skills</h1>
-            </div>
-
-            <div class="page-break-container"></div>
-
-            <ul id="skills-list">
-                <li class="skill">
-                    <h2>HTML</h2>
-                    <p>
-                        Used for developing website templates from <span>scratch</span>.
-                    </p>
-                </li>
-                <li class="skill">
-                    <h2>CSS</h2>
-                    <p>
-                        Used for styling HTML templates including: fonts,
-                        templates/formats, coloring, ect...
-                    </p>
-                </li>
-                <li class="skill">
-                    <h2>Javascript</h2>
-                    <p>
-                        Used for dynamic content like complex animation and even complex
-                        operations that the user may or may not see like handling web requests.
-                        For fast development of websites.
-                    </p>
-                </li>
-                <li class="skill">
-                    <h2>Python</h2>
-                    <p>
-                        Used for automating small tasks like file managers, web scraping, data
-                        analysis/visualization, and much more! For fast development and
-                        prototyping functionality of software. Compatable among devices with
-                        python installed on the system.
-                    </p>
-                </li>
-                <li class="skill">
-                    <h2>C/C++</h2>
-                    <p>
-                        Used for tasks that require speed and efficiency for larger software
-                        projects. Usually used for applications that require fast execution or
-                        have limited storage space. Can also take longer to develop and may
-                        require different versions for different device types.
-                    </p>
-                </li>
-                <li class="skill">
-                    <h2>Java</h2>
-                    <p>
-                        Used for larger software projects that both require speed and efficiency.
-                        For faster development and prototyping. Compatable among all devices with
-                        Java installed on the system. No need for developing multiple versions
-                        for different device types.
-                    </p>
-                </li>
-                <li class="skill">
-                    <h2>SQL</h2>
-                    <p>
-                        In essence, SQL is the language used to communicate with relational
-                        databases, allowing users to efficiently store, retrieve, and manage
-                        their data. 
-                    </p>
-                </li>
-                <li class="skill">
-                    <h2>Networking</h2>
-                    <p>
-                        Knowledge of setting up computer networks such as: WIFI, configuring 
-                        networking systems/devices, troubleshooting networks, network
-                        monitoring and more!
-                    </p>
-                </li>
-                <li class="skill">
-                    <h2>Automation</h2>
-                    <p>
-                        Used for small repeatable tasks that can speed up company and user
-                        efficiency. Can be used for file management, data processing,
-                        web automation.
-                    </p>
-                </li>
-            </ul>
-        </div>
-
-        <div id="projects-container">
-            <div class="section-title-container">
-                <h1 class="section-title">Projects</h1>
-            </div>
-
-            <div class="page-break-container"></div>
-
-            <ul id="projects-list">
-                <li class="project">
-                    <h2>PayPal Payment Form</h2>
-                    <div class="info-slider">
-                        <p>
-                            This is a payment for that utilizes Google Sites, Google Sheets
-                            and PayPal to pay and register for an event. This project utilizes
-                            free tools to allow for free deployment.
-                        </p>
-                        <a href="">View Code</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </main>
 </body>
-<script src="src/scripts/script.js"></script>
 </html>
