@@ -1,20 +1,20 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f7fa;
-    color: #333;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
  header {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(to right, #CFAE70, #A07C41);
+    background: linear-gradient(to right, #333333, #555555);
     color: white;
 }
   
 header img {
     border-radius: 200px;
-    border: 1px solid #f5f7fa;
+    border: 1px solid #333333;
 }
 
 header h1 {
@@ -36,7 +36,7 @@ section {
 h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: #A07C41;
+    color: #cccccc;
 }
 
 .projects {
@@ -46,22 +46,22 @@ h2 {
 }
 
 .project-card {
-    background: white;
+    background: #2a2a2a;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border-top: 4px solid #CFAE70;
+    border-top: 4px solid #555555;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }
 
 .project-card h3 {
     margin-top: 0;
-    color: #A07C41;
+    color: #dddddd;
 }
 
 .contact {
@@ -75,13 +75,13 @@ h2 {
 footer {
     text-align: center;
     padding: 20px;
-    background: #A07C41;
+    background: #333333;
     color: white;
     margin-top: 40px;
 }
 
 a {
-    color: #A07C41;
+    color: #cccccc;
     text-decoration: none;
     font-weight: 600;
 }
