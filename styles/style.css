@@ -24,15 +24,39 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(111, 125, 255, 0.16), transparent 24%),
-    radial-gradient(circle at 85% 12%, rgba(255, 111, 181, 0.12), transparent 18%),
-    radial-gradient(circle at 50% 100%, rgba(155, 92, 255, 0.16), transparent 28%),
     linear-gradient(180deg, #0c0912 0%, #09070d 54%, #120a1a 100%);
   line-height: 1.65;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(rgba(9, 7, 13, 0.38), rgba(9, 7, 13, 0.5)),
+    url("../assets/background.png") center center / cover no-repeat;
+  transform: scale(1.04);
+  transform-origin: center;
+  animation: backgroundFloat 18s ease-in-out infinite alternate;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top left, rgba(111, 125, 255, 0.1), transparent 24%),
+    radial-gradient(circle at 85% 12%, rgba(255, 111, 181, 0.08), transparent 18%),
+    radial-gradient(circle at 50% 100%, rgba(155, 92, 255, 0.1), transparent 28%);
 }
 
 a {
@@ -76,7 +100,7 @@ p {
   gap: 1rem;
   padding: 1rem 0 1.25rem;
   margin-bottom: 2rem;
-  background: linear-gradient(180deg, rgba(12, 9, 18, 0.96), rgba(12, 9, 18, 0.74));
+  background: linear-gradient(180deg, rgba(12, 9, 18, 0.78), rgba(12, 9, 18, 0.44));
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
@@ -210,7 +234,7 @@ p {
 .button-secondary {
   border-color: var(--line-strong);
   color: var(--text);
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .hero-aside {
@@ -393,7 +417,7 @@ p {
 .resume-placeholder {
   margin-top: 1.35rem;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(196, 140, 255, 0.12);
   border-radius: 1.25rem;
 }
@@ -401,7 +425,7 @@ p {
 .resume-sheet {
   padding: 1.25rem;
   border-radius: 1rem;
-  background: linear-gradient(180deg, rgba(24, 17, 34, 0.98), rgba(16, 12, 24, 0.94));
+  background: linear-gradient(180deg, rgba(24, 17, 34, 0.88), rgba(16, 12, 24, 0.8));
   box-shadow: var(--shadow-soft);
 }
 
@@ -445,6 +469,23 @@ p {
   color: var(--muted);
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.92rem;
+}
+
+@keyframes backgroundFloat {
+  0% {
+    transform: scale(1.04) translate3d(0, 0, 0);
+    filter: saturate(1) brightness(0.92);
+  }
+
+  50% {
+    transform: scale(1.08) translate3d(-1.2%, -0.8%, 0);
+    filter: saturate(1.08) brightness(0.98);
+  }
+
+  100% {
+    transform: scale(1.06) translate3d(1%, 1%, 0);
+    filter: saturate(1.03) brightness(0.95);
+  }
 }
 
 @media (max-width: 920px) {
@@ -497,5 +538,9 @@ p {
 
   .service-item {
     grid-template-columns: 1fr;
+  }
+
+  body::before {
+    animation-duration: 22s;
   }
 }
