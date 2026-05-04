@@ -331,6 +331,18 @@ p {
   box-shadow: var(--shadow-soft);
 }
 
+.project-visual-enrollment {
+  background:
+    linear-gradient(180deg, rgba(9, 7, 13, 0.04), rgba(9, 7, 13, 0.28)),
+    url("../assets/college-enrollment-system.png") center center / cover no-repeat;
+}
+
+.project-visual-registration-payment {
+  background:
+    linear-gradient(180deg, rgba(9, 7, 13, 0.04), rgba(9, 7, 13, 0.28)),
+    url("../assets/registration-payment-platform.png") center center / cover no-repeat;
+}
+
 .project-content {
   max-width: 42rem;
 }
@@ -353,6 +365,13 @@ p {
 .tag-row {
   display: flex;
   gap: 0.55rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.7rem;
   flex-wrap: wrap;
   margin-top: 1rem;
 }
