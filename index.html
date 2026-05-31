@@ -3,197 +3,333 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Developer Portfolio Template</title>
+  <title>Christian Ramos | Full-Stack Developer</title>
+  <meta name="description" content="Christian Ramos builds secure, practical full-stack systems for data collection, business operations, and streamlined workflows.">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <div class="page-shell">
+  <div class="background-tile-layer" aria-hidden="true"></div>
+  <div class="cursor-reticle" aria-hidden="true">
+    <span></span>
+  </div>
+  <div class="cursor-point" aria-hidden="true"></div>
+  <div class="cursor-trail" aria-hidden="true"></div>
+  <div class="cursor-orbit" aria-hidden="true"><span></span></div>
+  <div class="cursor-action" aria-hidden="true"></div>
+
+  <div class="site-shell">
     <header class="topbar">
-      <a href="#top" class="brand" aria-label="Portfolio home">
+      <a href="#top" class="brand" aria-label="Christian Ramos portfolio home">
         <span class="brand-mark">CR</span>
-        <span>Christian Ramos</span>
+        <span class="brand-copy">
+          <strong>Christian Ramos</strong>
+          <span>Full-Stack Developer</span>
+        </span>
       </a>
 
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#freelance">Freelance</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
+        <a href="#projects"><span>01</span>Projects</a>
+        <a href="#services"><span>02</span>Services</a>
+        <a href="#resume"><span>03</span>Resume</a>
+        <a href="#contact"><span>04</span>Contact</a>
       </nav>
+
+      <a class="availability" href="#contact">
+        <span class="status-dot"></span>
+        Available for work
+      </a>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <span class="eyebrow">Christian Ramos's Portfolio</span>
-          <h1>Building secure, useful systems.</h1>
-          <p class="hero-text">
-            I design and develop full-stack tools that help teams collect better data, streamline operations, and manage sensitive workflows with more confidence.
+      <section class="hero section-frame">
+        <div class="hero-main">
+          <div class="section-kicker"><span>00</span> Portfolio / 2026</div>
+          <p class="hero-intro">Full-stack development <span>/</span> business automation <span>/</span> security-minded systems</p>
+          <h1>Building systems that make complex work <em>clear.</em></h1>
+          <p class="hero-copy">
+            I design and develop practical digital tools for teams that need cleaner data collection, smoother operations, and reliable workflows.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View Projects</a>
-            <a class="button button-secondary" href="#contact">Get In Touch</a>
+            <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">-&gt;</span></a>
+            <a class="button button-ghost" href="#contact">Start a conversation</a>
+          </div>
+
+          <div class="hero-stack" aria-label="Core technologies">
+            <span>Core stack</span>
+            <div>
+              <span>React</span>
+              <span>FastAPI</span>
+              <span>Java</span>
+              <span>Supabase</span>
+              <span>REST APIs</span>
+            </div>
           </div>
         </div>
 
-        <aside class="hero-aside" aria-label="Highlights">
-          <div class="profile-image-frame">
-            <img class="profile-image" src="assets/christian-ramos-headshot.png" alt="Headshot of Christian Ramos">
+        <aside class="hero-panel">
+          <div class="panel-heading">
+            <span>Profile module</span>
+            <span>CR-001</span>
           </div>
-          <p class="hero-note">
-            I build practical full-stack tools for teams that need cleaner data collection, smoother operations, and security-minded systems. My work focuses on registration workflows, payment records, admin tools, reporting, and reliable database-backed applications.
-          </p>
-          <dl class="hero-facts">
+          <div class="profile-placeholder placeholder">
+            <span class="corner corner-top-left"></span>
+            <span class="corner corner-top-right"></span>
+            <span class="corner corner-bottom-left"></span>
+            <span class="corner corner-bottom-right"></span>
+            <img class="profile-image profile-image-avatar" src="assets/christian-ramos-technical-avatar-focus-icons.png" alt="Technical themed full-body avatar of Christian Ramos with holographic data collection, operations, and security icons">
+            <span class="profile-caption">Portrait capture / CR-001</span>
+          </div>
+          <dl class="profile-data">
             <div>
-              <dt>Featured projects</dt>
-              <dd>02</dd>
+              <dt>Location</dt>
+              <dd>Bay Area, CA</dd>
             </div>
             <div>
-              <dt>Freelance services</dt>
-              <dd>03</dd>
+              <dt>Focus</dt>
+              <dd>Useful, secure software</dd>
             </div>
             <div>
-              <dt>Current focus</dt>
-              <dd>Data Collection, Business Automation, and Cybersecurity</dd>
+              <dt>Mode</dt>
+              <dd><span class="status-dot"></span> Open to collaborate</dd>
             </div>
           </dl>
         </aside>
       </section>
 
-      <section class="site-section projects-section" id="projects">
-        <div class="section-intro">
-          <span class="section-label">Projects</span>
-          <h2>Featured work worth exploring</h2>
-          <p>Selected projects that show how I approach real workflows, from registration and payment systems to admin tools, reporting, and database-backed applications.</p>
+      <section class="stats-strip" aria-label="Portfolio summary">
+        <div>
+          <strong>02</strong>
+          <span>Featured builds</span>
+        </div>
+        <div>
+          <strong>03</strong>
+          <span>Service areas</span>
+        </div>
+        <div>
+          <strong>01</strong>
+          <span>Clear objective</span>
+        </div>
+        <p>Build technology that removes friction and gives teams confidence in the work they do every day.</p>
+      </section>
+
+      <section class="content-section" id="projects">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker"><span>01</span> Selected work</div>
+            <h2>Systems designed around real workflows.</h2>
+          </div>
+          <p>Each project starts with the operational problem: what needs to move faster, stay accurate, and remain understandable as it grows.</p>
         </div>
 
-        <div class="project-list">
-          <article class="project-entry">
-            <div class="project-visual project-visual-enrollment" aria-hidden="true"></div>
-            <div class="project-content">
-              <div class="project-meta">01</div>
-              <div class="project-title">College Enrollment System</div>
-              <p>A Java-based college enrollment system with a Hogwarts-themed Swing desktop interface and a socket-driven client/server backend. It supports student registration and login, course catalog browsing, enroll and drop workflows, admin course management, balance handling, and report logging with file-based persistence.</p>
-              <a class="button button-secondary" href="https://github.com/cramos2003/CS_401-project-1" target="_blank" rel="noreferrer">View Repository</a>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-placeholder placeholder">
+              <span class="corner corner-top-left"></span>
+              <span class="corner corner-top-right"></span>
+              <span class="corner corner-bottom-left"></span>
+              <span class="corner corner-bottom-right"></span>
+              <img class="project-image" src="assets/project-college-enrollment-technical.png" alt="Technical interface concept for the college enrollment system">
+              <span class="placeholder-label">System preview / 01</span>
+              <small>Desktop enrollment operations console</small>
+            </div>
+            <div class="project-body">
+              <div class="project-index"><span>01</span><span>Desktop / Client-server</span></div>
+              <h3>College Enrollment System</h3>
+              <p>A Java-based enrollment system with a themed Swing interface and socket-driven client/server backend for registrations, course management, balances, and reporting.</p>
               <div class="tag-row">
-                <span class="tag">Java</span>
-                <span class="tag">Swing</span>
-                <span class="tag">Sockets</span>
-                <span class="tag">JUnit</span>
-                <span class="tag">File I/O</span>
+                <span>Java</span><span>Swing</span><span>Sockets</span><span>JUnit</span>
               </div>
+              <a class="text-link" href="https://github.com/cramos2003/CS_401-project-1" target="_blank" rel="noreferrer">View repository <span>-&gt;</span></a>
             </div>
           </article>
 
-          <article class="project-entry">
-            <div class="project-visual project-visual-registration-payment" aria-hidden="true"></div>
-            <div class="project-content">
-              <div class="project-meta">02</div>
-              <div class="project-title">Event Registration & Payment Platform</div>
-              <p>A full-stack event registration system that lets car show participants, vendors, and sponsors submit tailored forms and complete payment through a server-backed checkout flow. The React frontend validates each registration path, while the FastAPI backend creates and captures PayPal orders, verifies payment webhooks, and stores customer, order, vendor, sponsor, car, and payment records in Supabase.</p>
-              <div class="project-links">
-                <a class="button button-secondary" href="https://github.com/cramos2003/RegistrationPaymentForm" target="_blank" rel="noreferrer">Frontend Repo</a>
-                <a class="button button-secondary" href="https://github.com/cramos2003/RegistrationPaymentFormBackend" target="_blank" rel="noreferrer">Backend Repo</a>
-              </div>
+          <article class="project-card">
+            <div class="project-placeholder placeholder">
+              <span class="corner corner-top-left"></span>
+              <span class="corner corner-top-right"></span>
+              <span class="corner corner-bottom-left"></span>
+              <span class="corner corner-bottom-right"></span>
+              <img class="project-image" src="assets/project-event-registration-technical.png" alt="Technical interface concept for the event registration and payment platform">
+              <span class="placeholder-label">System preview / 02</span>
+              <small>Registration, checkout, and records platform</small>
+            </div>
+            <div class="project-body">
+              <div class="project-index"><span>02</span><span>Web / Full-stack</span></div>
+              <h3>Event Registration &amp; Payment Platform</h3>
+              <p>A tailored registration and checkout system with validated submission paths, PayPal order capture, verified webhooks, and structured records stored in Supabase.</p>
               <div class="tag-row">
-                <span class="tag">React</span>
-                <span class="tag">Vite</span>
-                <span class="tag">FastAPI</span>
-                <span class="tag">PayPal</span>
-                <span class="tag">Supabase</span>
+                <span>React</span><span>FastAPI</span><span>PayPal</span><span>Supabase</span>
+              </div>
+              <div class="link-row">
+                <a class="text-link" href="https://github.com/cramos2003/RegistrationPaymentForm" target="_blank" rel="noreferrer">Frontend <span>-&gt;</span></a>
+                <a class="text-link" href="https://github.com/cramos2003/RegistrationPaymentFormBackend" target="_blank" rel="noreferrer">Backend <span>-&gt;</span></a>
               </div>
             </div>
           </article>
-<!--
-  <article class="project-entry">
-    <div class="project-visual" aria-hidden="true"></div>
-    <div class="project-content">
-      <div class="project-meta">03</div>
-      <div class="project-title">Project Placeholder Three</div>
-      <p>Show a project that demonstrates problem solving, performance work, integrations, or user-centered design.</p>
-      <div class="tag-row">
-        <span class="tag">Full Stack</span>
-        <span class="tag">Cloud</span>
-        <span class="tag">GitHub</span>
-      </div>
-    </div>
-  </article>
-  
-  <article class="project-entry">
-    <div class="project-visual" aria-hidden="true"></div>
-    <div class="project-content">
-      <div class="project-meta">04</div>
-      <div class="project-title">Project Placeholder Four</div>
-      <p>Reserve space for another strong example, client build, or personal tool that rounds out your portfolio.</p>
-      <div class="tag-row">
-        <span class="tag">Design</span>
-        <span class="tag">Testing</span>
-        <span class="tag">Launch</span>
-      </div>
-    </div>
-  </article>
-</div>
-</section>
--->
-
-      <section class="site-section split-section" id="freelance">
-        <div class="section-intro">
-          <span class="section-label">Freelance</span>
-          <h2>Practical systems for small teams</h2>
-          <p>I help turn manual workflows into clearer, more reliable software, from structured intake forms and payment records to admin tools, reporting, and safer handling of operational data.</p>
-        </div>
-
-        <div class="service-list">
-          <div class="service-item">
-            <span>Data collection systems</span>
-            <span>Custom forms, validation flows, payment intake, and database-backed records for events, registrations, clients, or internal tracking.</span>
-          </div>
-          <div class="service-item">
-            <span>Business operations tools</span>
-            <span>Dashboards and admin workflows that help teams manage customers, orders, enrollments, balances, reports, and day-to-day updates in one place.</span>
-          </div>
-          <div class="service-item">
-            <span>Cybersecurity-minded improvements</span>
-            <span>Practical reviews and upgrades for authentication, data handling, API boundaries, payment workflows, environment variables, and deployment hygiene.</span>
-          </div>
         </div>
       </section>
 
-      <section class="site-section split-section" id="resume">
-        <div class="section-intro">
-          <span class="section-label">Resume</span>
-          <h2>Resume and experience</h2>
-          <p>Download a current copy of my resume for a quick look at my technical background, project work, and areas of focus.</p>
+      <section class="content-section" id="services">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker"><span>02</span> Capabilities</div>
+            <h2>Practical engineering for small teams.</h2>
+          </div>
+          <p>I turn manual processes into clearer systems with a focus on maintainability, useful interfaces, and thoughtful data handling.</p>
         </div>
 
-        <div class="resume-card">
-          <h3>Christian Ramos Resume</h3>
-          <p>A concise PDF covering my development experience, technical skills, and project work across full-stack systems, data collection, business operations, and cybersecurity.</p>
-          <a class="button button-primary resume-download" href="assets/christian-ramos-resume.pdf" download>
-            Download Resume
-          </a>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <h3>Data collection systems</h3>
+            <p>Custom forms, validation flows, payment intake, and database-backed records for events, registrations, clients, or internal tracking.</p>
+            <span class="service-code">INPUT / VALIDATE / STORE</span>
+          </article>
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Operations tools</h3>
+            <p>Dashboards and admin workflows for customers, orders, enrollments, balances, reports, and the updates teams manage every day.</p>
+            <span class="service-code">ORGANIZE / AUTOMATE / REPORT</span>
+          </article>
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Security-minded improvements</h3>
+            <p>Practical reviews and upgrades for authentication, API boundaries, data handling, payment workflows, and deployment hygiene.</p>
+            <span class="service-code">REVIEW / HARDEN / DEPLOY</span>
+          </article>
         </div>
       </section>
 
-      <section class="site-section split-section" id="contact">
-        <div class="section-intro">
-          <span class="section-label">Contact</span>
-          <h2>Ways to reach me</h2>
-          <p>Feel free to reach out via phone, email, or social media.</p>
+      <section class="resume-section content-section" id="resume">
+        <div>
+          <div class="section-kicker"><span>03</span> Resume archive</div>
+          <h2>Technical background, in one concise file.</h2>
+          <p>Download a current copy of my resume for an overview of my development experience, technical skills, and project work.</p>
+          <a class="button button-primary" href="assets/christian-ramos-resume.pdf" download>Download resume <span aria-hidden="true">-&gt;</span></a>
         </div>
+        <div class="resume-preview">
+          <div class="panel-heading">
+            <span>Document preview</span>
+            <span>PDF / 01</span>
+          </div>
+          <div class="document-lines" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <strong>Christian Ramos</strong>
+          <small>FULL-STACK DEVELOPER / RESUME</small>
+        </div>
+      </section>
 
-        <div class="contact-list">
-          <a class="contact-link" href="tel:+15104565036">+1 (510) 456-5036</a>
-          <a class="contact-link" href="mailto:Christian.Ramos7459@gmail.com">Christian.Ramos7459@gmail.com</a>
-          <a class="contact-link" href="https://www.linkedin.com/in/christian-ramos23">linkedin.com/in/christian-ramos23</a>
-          <a class="contact-link" href="https://github.com/cramos2003">github.com/cramos2003</a>
+      <section class="contact-section content-section" id="contact">
+        <div>
+          <div class="section-kicker"><span>04</span> Contact terminal</div>
+          <h2>Have a system that could work better?</h2>
+          <p>Tell me what is slowing things down. We can figure out the right way to simplify it.</p>
+        </div>
+        <div class="contact-panel">
+          <div class="panel-heading">
+            <span>Available channels</span>
+            <span>04 active</span>
+          </div>
+          <a href="mailto:Christian.Ramos7459@gmail.com"><span>Email</span><strong>Christian.Ramos7459@gmail.com</strong><b>-&gt;</b></a>
+          <a href="tel:+15104565036"><span>Phone</span><strong>+1 (510) 456-5036</strong><b>-&gt;</b></a>
+          <a href="https://www.linkedin.com/in/christian-ramos23" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>linkedin.com/in/christian-ramos23</strong><b>-&gt;</b></a>
+          <a href="https://github.com/cramos2003" target="_blank" rel="noreferrer"><span>GitHub</span><strong>github.com/cramos2003</strong><b>-&gt;</b></a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      Christian Ramos - Full-stack development, data collection, business operations, and cybersecurity-focused work.
+      <span>Christian Ramos / Portfolio 2026</span>
+      <span>Designed for clarity. Built with intent.</span>
     </footer>
   </div>
+  <script>
+    (() => {
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+      const root = document.documentElement;
+      const reticle = document.querySelector(".cursor-reticle");
+      const point = document.querySelector(".cursor-point");
+      const trail = document.querySelector(".cursor-trail");
+      const orbit = document.querySelector(".cursor-orbit");
+      const action = document.querySelector(".cursor-action");
+      const tileLayer = document.querySelector(".background-tile-layer");
+      const interactiveSelector = "a, button, .project-card, .service-card, .resume-preview, .placeholder";
+      const tileBlockedSelector = "a, button, .project-card, .service-card, .resume-preview, .placeholder, .contact-panel";
+      const gridSize = 54;
+      let pointerX = -100;
+      let pointerY = -100;
+      let reticleX = -100;
+      let reticleY = -100;
+      let trailX = -100;
+      let trailY = -100;
+      let cursorFrame = 0;
+      let activeHoverTarget = null;
+
+      const renderCursor = () => {
+        reticleX += (pointerX - reticleX) * 0.2;
+        reticleY += (pointerY - reticleY) * 0.2;
+        trailX += (pointerX - trailX) * 0.1;
+        trailY += (pointerY - trailY) * 0.1;
+        reticle.style.transform = `translate3d(${reticleX}px, ${reticleY}px, 0)`;
+        point.style.transform = `translate3d(${pointerX}px, ${pointerY}px, 0)`;
+        trail.style.transform = `translate3d(${trailX}px, ${trailY}px, 0)`;
+        orbit.style.transform = `translate3d(${pointerX}px, ${pointerY}px, 0)`;
+        const needsAnotherFrame = Math.abs(pointerX - trailX) > 0.1 || Math.abs(pointerY - trailY) > 0.1;
+        cursorFrame = needsAnotherFrame ? requestAnimationFrame(renderCursor) : 0;
+      };
+
+      window.addEventListener("pointermove", (event) => {
+        if (event.pointerType === "touch") return;
+
+        pointerX = event.clientX;
+        pointerY = event.clientY;
+        root.classList.add("cursor-enhanced");
+        root.classList.add("cursor-visible");
+        const hoverTarget = event.target instanceof Element ? event.target.closest(interactiveSelector) : null;
+        root.classList.toggle("cursor-hovering", Boolean(hoverTarget));
+        if (hoverTarget !== activeHoverTarget) {
+          activeHoverTarget = hoverTarget;
+          orbit.classList.remove("is-active");
+          if (hoverTarget) {
+            void orbit.offsetWidth;
+            orbit.classList.add("is-active");
+          }
+        }
+        if (!cursorFrame) cursorFrame = requestAnimationFrame(renderCursor);
+      }, { passive: true });
+
+      window.addEventListener("pointerdown", (event) => {
+        if (event.pointerType === "touch") return;
+
+        action.style.left = `${event.clientX}px`;
+        action.style.top = `${event.clientY}px`;
+        action.classList.remove("is-active");
+        void action.offsetWidth;
+        action.classList.add("is-active");
+      }, { passive: true });
+      window.addEventListener("click", (event) => {
+        if (event.target instanceof Element && event.target.closest(tileBlockedSelector)) return;
+
+        const tile = document.createElement("span");
+        const tileX = Math.floor((event.clientX + window.scrollX) / gridSize) * gridSize - window.scrollX;
+        const tileY = Math.floor((event.clientY + window.scrollY) / gridSize) * gridSize - window.scrollY;
+        tile.className = "background-tile-highlight";
+        tile.style.left = `${tileX}px`;
+        tile.style.top = `${tileY}px`;
+        tile.addEventListener("animationend", () => tile.remove(), { once: true });
+        tileLayer.append(tile);
+      }, { passive: true });
+      document.addEventListener("mouseleave", () => {
+        activeHoverTarget = null;
+        root.classList.remove("cursor-visible", "cursor-hovering");
+      });
+      window.addEventListener("blur", () => {
+        activeHoverTarget = null;
+        root.classList.remove("cursor-visible", "cursor-hovering");
+      });
+    })();
+  </script>
 </body>
 </html>
